@@ -1,0 +1,303 @@
+<!-- saved from url=(0061)http://www.yunhaiwang.net/infoVis2020/SubspacePage/index.html -->
+<html style=""><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>NotePlayer</title>
+    <style type="text/css">
+        body {
+            font-family: Arial, Verdana, Helvetica, sans-serif
+        }
+
+        section {
+            width: 100%;
+            float: left;
+        }
+
+        h1 {
+            font-size: 26px;
+        }
+
+        h2 {
+            font-size: 20px;
+        }
+
+        h3 {
+            font-size: 16px;
+        }
+
+        p {
+            float: left;
+            display: block;
+            font-size: 16px;
+            text-align: justify;
+        }
+
+        a {
+            text-decoration: none;
+            color: #007acd;
+        }
+
+        a:hover {
+            color: #75c8ff;
+        }
+
+        .container {
+            width: 960px;
+            margin: 0 auto;
+            text-align: left;
+            padding: 1em 2em 2em 2em;
+        }
+
+        .two-column {
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .v-column {
+            box-sizing: border-box;
+            display: flex;
+        }
+
+        .column {
+            flex: 1;
+            display: flex;
+        }
+
+
+
+        .img-container {
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .split {
+            width: 10px;
+            height: 100%;
+        }
+
+        .img-inner-container {
+            display: inline-block;
+            width: 100%;
+            box-sizing: border-box;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+        }
+
+        .caption {
+            float: left;
+            width: 100%;
+            text-align: center;
+            margin: 6px 0 0 0;
+        }
+
+        .img-inner-container .item {
+            display: block;
+            float: left;
+        }
+
+        .img-inner-container .item img {
+            float: left;
+            height: 180px;
+        }
+
+        .img-inner-container .item p {
+            clear: both;
+            float: left;
+            text-align: center;
+            margin: 10px 0 0 0;
+            width: 100%;
+        }
+
+        .para-title {
+            float: left;
+            margin: 30px 0 0 0;
+        }
+
+        .column .para-title {
+            float: left;
+            margin: 0px 10px 0 0;
+        }
+
+        .style1 {
+            FONT-WEIGHT: bold;
+            FONT-SIZE: 20px;
+            FONT-FAMILY: Arial, Verdana, Helvetica, sans-serif
+        }
+    </style>
+</head>
+
+
+<body data-new-gr-c-s-check-loaded="8.906.0" data-gr-ext-installed="" style="margin-bottom: 8px !important;">
+    <!--=======draw top line========= -->
+    <div class="container">
+
+        <!--=======paper information: name authour and institution  ========= -->
+        <center>
+            <h1>NotePlayer: Engaging Jupyter Notebooks  <br> for Dynamic Presentation of Analytical Processes</h1>
+
+            <h3>
+                <span>
+                    <a href="https://cat-ouyang.github.io/" target="_ blank">Yang Ouyang</a>
+                </span><sup>1, 3</sup>&nbsp;&nbsp;
+                <span><a href="https://shenleixian.github.io/" target="_blank">Leixian Shen</a></span><sup>2</sup>&nbsp; &nbsp;
+                <span>
+                    <a href="https://www.microsoft.com/en-us/research/people/wangyun/" target="_blank">Yun Wang*</a>
+                </span><sup>3</sup>&nbsp;&nbsp;
+                <span>
+                    <a href="https://thinkavatar.github.io/" target="_blank">Quan Li*</a>
+                </span><sup>1</sup>&nbsp;&nbsp;
+                <br>
+                <sup>1</sup>ShanghaiTech University &nbsp;
+                <sup>2</sup>The Hong Kong University of Science and Technology &nbsp;
+                <sup>3</sup>Microsoft Research Asia &nbsp;
+            </h3>
+
+            <h3> ACM Symposium on User Interface Software and Technology (<a href="https://uist.acm.org/2024/">ACM UIST 2024</a>)</h2>
+<!--                <hr> -->
+        </center>
+
+        <!--=======teaser========= -->
+        <a target="_blank"><img src="./material/image/pipeline.png" alt="" width="950"></a>
+        <p class="style_text" align="left"><b>Figure 1</b>: The overview of NotePlayer presents two primary components: interactive modules and computational engines.
+The interactive modules provide intuitive controls and real-time feedback, while the computational engines, serving as the
+backbone of NotePlayer, process data and generate outputs for the interactive modules with assistance from language models.</p>
+        <br>
+
+        <!--=======draw line========= -->
+
+        <!-- <hr> -->
+
+        <!--=======Abstract========= -->
+        <section>
+            <h2 class="para-title">Abstract:</h2>
+            <p>
+                Diverse presentation formats play a pivotal role in effectively conveying code and analytical processes during data analysis. One increasingly popular format is tutorial videos, particularly those based on Jupyter notebooks, which offer an intuitive interpretation of code and vivid explanations of analytical procedures.
+However, creating such videos requires a diverse skill set and significant manual effort, posing a barrier for many analysts.
+To bridge this gap, we introduce an innovative tool called NotePlayer, which connects notebook cells to video segments and incorporates a computational engine with language models to streamline video creation and editing. Our aim is to make the process more accessible and efficient for analysts. To inform the design of NotePlayer, we conducted a formative study and performed content analysis on a corpus of 38 Jupyter tutorial videos. This helped us identify key patterns and challenges encountered in existing tutorial videos, guiding the development of NotePlayer. Through a combination of a usage scenario and a user study, we validated the effectiveness of NotePlayer. The results show that the tool streamlines the video creation and facilitates the communication process for data analysts.
+
+            </p>
+        </section>
+
+
+        <!--=======Video========= -->
+
+        <p><span class="style1">Video Preview:</span></p>
+
+        <p align="center"><video src="./material/video/intro.mp4" controls="controls" width="950"></video></p>
+        <p>
+            <br>
+            <br>
+            <br>
+
+            <!--=======materials========= -->
+            </p><section>
+                <h2 class="para-title">Resources:</h2><br><br><br><br>
+                <a href="./material/pdf/NotePlayer.pdf">Paper</a>
+<!--                <a href="./material/pdf/supplementary_material.pdf">Supp</a><br>-->
+            </section>
+
+            <!-- <h2 class="para-title">Materials:</h2>
+        <p><b>Paper:</b><a href="./shapewordle.pdf">[PDF 28.7M]</a>. </p>
+        <p><b> Supp:</b><a href="./shapewordle_supp.pdf">[PDF 157M]</a>. </p> -->
+
+            <!-- <section>
+                <h2 class="para-title">Overview:</h2><br><br><br><br>
+                <a href="tech_illustrate.png" target="_blank" style="margin:0 auto"><img src="tech_illustrate.png"
+                        alt="" width="950"></a>
+                <p class="style_text" align="left"><b>Figure 2</b>:
+                    Technical Illustration of Joint t-SNE. Note that we only consider 3-node graphlets for simplicity.
+                    a) Some changes happened between X<sub>0</sub> and X<sub>1</sub> . Several points broke the
+                    neighborhood relationship with the original cluster. Joint t-SNE measures the similarity of local
+                    structures to ﬁnd such changes and computes edge similarities (S<sub>e<sub>12</sub></sub> >
+                    S<sub>e<sub>13</sub></sub> > S<sub>e<sub>14</sub></sub> ). b) Using edge similarity as the weight of
+                    the corresponding vector constraint, Joint t-SNE generates projection Y<sub>1</sub> , which keeps
+                    the relative position of points in Y<sub>0</sub> accordingly.
+                </p>
+            </section> -->
+
+            <section>
+                <h2 class="para-title">Usage Scenario:</h2><br><br><br><br>
+                <a  target="_blank"><img src="./material/image/UsageScenario.png" alt="" width="950"></a>
+                <p class="style_text" align="left"><b>Figure 2</b>:
+                   The user’s progression in crafting a dynamic presentation using NotePlayer follows these steps: (a) integrating
+the tool into the notebook, then (b) showcasing the Logic Flow Representation. Next, the user (c) directs attention to the
+“Germany COVID-19 Data” code cell and (d) applies emphasis operations. Following this, (e) the Emphasis Record is displayed.
+Subsequently, (f) the narration linked to the code cell and user annotations is introduced. This is followed by (g) adjusting the
+narrative style from declarative to interactive question-and-answer format, and finally, (h) demonstrating the Scene Playback.
+                </p>
+                <br><br>
+            </section>
+
+            <!-- <section>
+                <a  target="_blank"><video src="./material/video/tax-payment.mp4" controls="controls" width="470"></a>
+                <p class="style_text" align="left"><b>Figure 1</b></p>
+                <br><br>
+            </section> -->
+
+            <section>
+                <h2 class="para-title">Video Example:</h2><br><br><br><br>
+                 <a  target="_blank"><img src="./material/image/example1.png" alt="" width="950"></a>
+                <p class="style_text" align="left"><b>Figure 3</b>:
+                The video example generated for the usage scenario by NotePlayer. The example includes a sequence of annotations
+and animations. These will be triggered when the audio narration reaches the corresponding segment.
+<!--                <video width="470" poster="./material/image/4.png" controls>-->
+<!--                    <source src="./material/video/tax-payment.mp4" type="video/mp4">-->
+<!--                </video>-->
+
+<!--                <video width="470" poster="./material/image/3.png" controls>-->
+<!--                    <source src="./material/video/chinese-tourists.mp4" type="video/mp4">-->
+<!--                </video>-->
+
+<!--                <video width="470" poster="./material/image/2.png" controls>-->
+<!--                    <source src="./material/video/tourism.mp4" type="video/mp4">-->
+<!--                </video>-->
+
+<!--                <video width="470" poster="./material/image/5.png" controls>-->
+<!--                    <source src="./material/video/Likert.mp4" type="video/mp4">-->
+<!--                </video>-->
+
+<!--                <video width="470" poster="./material/image/1.png" controls>-->
+<!--                    <source src="./material/video/PM2.5.mp4" type="video/mp4">-->
+<!--                </video>-->
+
+<!--                <video width="470" poster="./material/image/6.png" controls>-->
+<!--                    <source src="./material/video/stock-price.mp4" type="video/mp4">-->
+<!--                </video>-->
+                <!-- <a  target="_blank"><img src="./material/image/pipeline.png" alt="" width="950"></a> -->
+                <!-- <p align="center"><video src="./material/video/tax-payment.mp4" controls="controls" width="470"></video></p>
+                <p align="center"><video src="./material/video/chinese-tourists.mp4" controls="controls" width="470"></video></p>
+                <p align="center"><video src="./material/video/tourism.mp4" controls="controls" width="460"></video></p>
+                <p align="center"><video src="./material/video/Likert.mp4" controls="controls" width="470"></video></p>
+                <p align="center"><video src="./material/video/PM2.5.mp4" controls="controls" width="460"></video></p>
+                <p align="center"><video src="./material/video/stock-price.mp4" controls="controls" width="470"></video></p> -->
+                <!-- <p class="style_text" align="left"><b>Figure 1</b>:
+                    Overview of our tree construction: (a) a set of input curves with point samples (white) and split points (orange); (b) the KD-tree in TVS space built for the input curves with the newly-added split points (yellow), the thickness of split planes’ borders (blue) indicates the level, where split planes of thicker borders are in the upper (higher) levels of the KD-tree; and (c) the curve segment in each grid cell volume is fit by a straight-line segment.
+                </p> -->
+                <br><br>
+                
+
+
+            </section>
+
+            <!-- <section>
+                <h2 class="para-title">Acknowledgements:</h2>
+                <p>
+                    This work is supported by the grants of the NSFC (61772315, 61861136012), the Open Project Program
+                    of State Key Laboratory of Virtual Reality Technology and Systems, Beihang University
+                    (No.VRLAB2020C08), and the CAS grant (GJHZ1862).
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                </p>
+
+
+            </section> -->
+
+
+    </div>
+
+
+
